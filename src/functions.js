@@ -1,10 +1,27 @@
 // 1 - Crie a função ligarDesligar, que ligue e desligue um motor de um carro.
-let status = 'ligado'
-const ligarDesligar = (status) => ((status === 'ligado') ?
-  (console.log(`O motor esta desligado`), `desligado`) :
-  (console.log(`O motor esta ligado`), `ligado`));
+/* let status = 'desligado'; */
 
-console.log(ligarDesligar(status))
+/* function ligarDesligar(status) {
+  if (status === 'ligado') {
+    console.log('O motor esta desligado');
+    return status = 'desligado';
+  } else {
+    console.log('O motor esta ligado');
+    return status = 'ligado';
+  }
+} */
+/* const ligarDesligar = (status) => (status === 'ligado') ?
+  (console.log('O motor esta desligado'), (status = 'desligado')) :
+  (console.log('O motor esta ligado'), (status = 'ligado'))); */
+
+
+const ligarDesligar = (status) => {
+status = status === 'ligado' ? 'desligado' : 'ligado';
+console.log(`O motor está ${status}`)
+return status
+}
+
+console.log(ligarDesligar('desligado'));
 // 2 - Crie a função circleArea, que calcule a área de um círculo. 
 
 
