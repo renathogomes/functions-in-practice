@@ -1,6 +1,5 @@
 // 1 - Crie a função ligarDesligar, que ligue e desligue um motor de um carro.
 
-
 const ligarDesligar = (status) => {
   status = status === 'ligado' ? 'desligado' : 'ligado';
   console.log(`O motor está ${status}`)
@@ -22,9 +21,21 @@ const circleArea = (raio) => {
 
 console.log(circleArea(10))
 
-
 // 3 - Crie a função longestWord, que receba uma frase como parâmetro e retorne a maior palavra da frase.
 
+const longestWord = (frase) => {
+  let arrayDaFrase = frase.split(' ')
+  let maiorPalavra = []
+  for (let palavra of arrayDaFrase){
+    if(palavra.length > maiorPalavra.length){
+      maiorPalavra = palavra
+    }
+  }
+
+  return maiorPalavra
+};
+
+console.log(longestWord('Eu estudo na Trybe com muita dedicação'))
 
 // Não modifique as linhas abaixo
 module.exports = {
